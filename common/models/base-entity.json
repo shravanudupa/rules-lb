@@ -1,0 +1,26 @@
+{
+  "name": "BaseEntity",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true,
+    "trackChanges": false,
+    "updateOnLoad": true,
+    "isBaseEntity": true,
+    "strictObjectIDCoercion": true,
+    "replaceOnPUT" : false
+  },
+  "mixins": {
+    "ObserverMixin": true,
+    "AuditFieldsMixin": true,
+    "HistoryMixin": true,
+    "SoftDeleteMixin": true,
+    "VersionMixin": true
+  },
+  "validations": [],
+  "relations": {},
+  "methods": {}
+}
+
